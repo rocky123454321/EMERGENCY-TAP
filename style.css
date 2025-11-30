@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0f7fa, #fff9c4);
+    color: #333;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    background: #00796b;
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav .nav-links li a:hover {
+    color: #ffeb3b;
+}
+
+.title {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00796b;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.emergency-list {
+    max-width: 1000px;
+    margin: 50px auto 100px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.emergency-item {
+    background: #ffffffcc;
+    border-left: 5px solid #00796b;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.emergency-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.service-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00796b;
+}
+
+.infor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.contact {
+    font-size: 1rem;
+    margin: 5px 0;
+    cursor: pointer;
+    color: #00796b;
+    transition: color 0.3s;
+}
+
+.contact:hover {
+    color: #ff5722;
+}
+
+.phone {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: 600;
+}
+
+.phone:hover {
+    color: #ff5722;
+}
+
+[class^="INFORMATION"] {
+    display: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+[class^="INFORMATION"] ul {
+    list-style: disc inside;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+@keyframes slideDown {
+    from {opacity: 0; max-height: 0;}
+    to {opacity: 1; max-height: 500px;}
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff8a65, #ff7043);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+}
+
+/* Slow enlarge on hover only */
+.circle:hover {
+    transform: scale(1.12);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Removed rotating progress bar */
+.progress {
+    display: none;
+}
+
+.circle h4 {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1;
+    margin: 2px 0;
+    text-align: center;
+}
+
+.circle h6 {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+footer {
+    background: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 3px 0;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency List</title>
+</head>
+<body>
+    <nav>
+     
+    </nav>
+
+    <h1 class="title">Emergency Contacts</h1>
+ <div class="emergency-list">
+        <div class="main">
+            <div class="circle" onclick="hold()">
+                
+                <div class="progress"></div>
+                <h4>Emergency</h4>
+                <h4>Quick</h4>
+                <h6>HOLD</h6>
+            </div>
+        </div>
+
+        <header> <nav class="navbar"> <div class="logo">🚨 Emergency Directory</div> <ul class="nav-links"> <li><a href="#firefighter">Firefighter</a></li> <li><a href="#police">Police</a></li> <li><a href="#ambulance">Ambulance</a></li> <li><a href="#hospital">Hospital</a></li> <li><a href="#electric">Electric</a></li> <li><a href="#coastguard">Coast Guard</a></li> <li><a href="#national">National</a></li> <li><a href="#rescue">Rescue</a></li> <li><a href="#animal">Animal Control</a></li> <li><a href="#flood">Flood Unit</a></li> <li><a href="#disaster">Disaster Team</a></li> <li><a href="#poison">Poison Control</a></li> </ul> </nav> </header>
+
+
+        <!-- Firefighter -->
+        <div class="emergency-item" id="firefighter">
+            <h3 class="service-name">🔥 Firefighter (Bumbero)</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact" id="info" onclick="drop1()">Info ▽</p>
+            </div>
+            <div class="INFORMATION1">
+                <ul>
+                    <li>Do not attempt fire rescue alone.</li>
+                    <li>Follow local fire department instructions.</li>
+                    <li>Use safety equipment at all times.</li>
+              
+                </ul>
+            </div>
+        </div>
+
+        <!-- Police -->
+        <div class="emergency-item" id="police">
+            <h3 class="service-name">👮‍♂️ Police (Pulis)</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact" onclick="drop2()">Info ▽</p>
+            </div>
+            <div class="INFORMATION2">
+                <ul>
+                    <li>Report crimes only to local authorities.</li>
+                    <li>Do not approach dangerous criminals alone.</li>
+                    <li>This number is fake for demo purposes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Ambulance -->
+        <div class="emergency-item" id="ambulance">
+            <h3 class="service-name">🚑 Ambulance</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact" onclick="drop3()">Info ▽</p>
+            </div>
+            <div class="INFORMATION3">
+                <ul>
+                    <li>Only trained personnel should provide emergency care.</li>
+                    <li>Keep calm and follow ambulance instructions.</li>
+                    <li>Fake number for demonstration.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hospital -->
+        <div class="emergency-item" id="hospital">
+            <h3 class="service-name">🏥 Hospital Emergency</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact" onclick="drop4()">Info ▽</p>
+            </div>
+            <div class="INFORMATION4">
+                <ul>
+                    <li>Visit only in case of real emergencies.</li>
+                    <li>Follow hospital staff instructions.</li>
+                    <li>Number is fake for demo purposes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Electric Emergency -->
+        <div class="emergency-item" id="electric">
+            <h3 class="service-name">⚡ Electric Emergency</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact"onclick="drop5()">Info ▽</p>
+            </div>
+            <div class="INFORMATION5">
+                <ul>
+                    <li>Do not touch exposed wires.</li>
+                    <li>Follow local electricity provider instructions.</li>
+                    <li>Fake number for demo purposes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Highway Patrol -->
+        <div class="emergency-item" id="highway">
+            <h3 class="service-name">🚓 Highway Patrol</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact" onclick="drop6()">Info ▽</p>
+            </div>
+            <div class="INFORMATION6">
+                <ul>
+                    <li>Follow traffic rules at all times.</li>
+                    <li>Report accidents to patrol immediately.</li>
+                    <li>Number is fake for demo purposes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Coast Guard -->
+        <div class="emergency-item" id="coastguard">
+            <h3 class="service-name">🌊 Coast Guard</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact"onclick="drop7()">Info ▽</p>
+            </div>
+            <div class="INFORMATION7">
+                <ul>
+                    <li>Do not attempt rescue in dangerous waters alone.</li>
+                    <li>Follow coast guard instructions strictly.</li>
+                    <li>Fake number for demo purposes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- National Emergency -->
+        <div class="emergency-item" id="national">
+            <h3 class="service-name">🚨 National Emergency Hotline</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact" onclick="drop8()">Info ▽</p>
+            </div>
+            <div class="INFORMATION8">
+                <ul>
+                    <li>Use only in real national emergencies.</li>
+                    <li>Follow official government instructions.</li>
+                    <li>Number is fake for demo purposes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- NEW SECTIONS BELOW -->
+
+        <!-- Rescue Team -->
+        <div class="emergency-item" id="rescue">
+            <h3 class="service-name">🆘 Rescue Team</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact" onclick="drop9()">Info ▽</p>
+            </div>
+            <div class="INFORMATION9">
+                <ul>
+                    <li>Trained professionals handle search and rescue operations.</li>
+                    <li>Stay in a safe location until help arrives.</li>
+                    <li>Number is fake for demo purposes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Animal Control -->
+        <div class="emergency-item" id="animal">
+            <h3 class="service-name">🐾 Animal Control</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact" onclick="drop10()">Info ▽</p>
+            </div>
+            <div class="INFORMATION10">
+                <ul>
+                    <li>Report stray or dangerous animals safely.</li>
+                    <li>Do not attempt to catch wild animals.</li>
+                    <li>Number is fake for demo purposes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Flood Response -->
+        <div class="emergency-item" id="flood">
+            <h3 class="service-name">🌧️ Flood Response Unit</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact" onclick="drop11()">Info ▽</p>
+            </div>
+            <div class="INFORMATION11">
+                <ul>
+                    <li>Evacuate immediately when instructed by authorities.</li>
+                    <li>Do not walk or drive through flooded areas.</li>
+                    <li>Number is fake for demo purposes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Disaster Response -->
+        <div class="emergency-item" id="disaster">
+            <h3 class="service-name">🌋 Disaster Response Team</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact" onclick="drop12()">Info ▽</p>
+            </div>
+            <div class="INFORMATION12">
+                <ul>
+                    <li>Follow disaster alerts and evacuation plans.</li>
+                    <li>Keep an emergency bag ready at all times.</li>
+                    <li>Number is fake for demo purposes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Poison Control -->
+        <div class="emergency-item" id="poison">
+            <h3 class="service-name">☠️ Poison Control Center</h3>
+            <div class="infor">
+                <p class="contact">Contact: <a href="tel:12345" class="phone">12345</a></p>
+                <p class="contact" onclick="drop13()">Info ▽</p>
+            </div>
+            <div class="INFORMATION13">
+                <ul>
+                    <li>Provide full details of the substance ingested.</li>
+                    <li>Do not induce vomiting unless advised by experts.</li>
+                    <li>Number is fake for demo purposes.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<footer>
+    <h5>© 2025 All Rights Reserved</h5>
+    <p>Created by RocKy Ducusin | Emergency Contact Directory Project</p>
+    <p>For inquiries: <a href="mailto:rockyjayducusin3@gmail.com">rockyjayducusin3@gmail.com</a></p>
+</footer>
+
+<script src="JS.js"></script>
+</html>
