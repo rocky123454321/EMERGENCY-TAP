@@ -227,6 +227,8 @@ footer a:hover {
         flex-direction: column;
         padding: 15px 20px;
         text-align: center;
+    }li{
+         list-style: none;
     }
     nav .nav-links {
         flex-wrap: wrap;
@@ -253,4 +255,5 @@ footer a:hover {
     .service-name { font-size: 1.2rem; }
     .circle { width: 90px; height: 90px; }
 }
+
 
